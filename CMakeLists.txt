@@ -80,3 +80,7 @@ add_executable(ex02
 )
 target_link_libraries(ex02 glfw.3 ${VULKAN_LIBS} )
 
+add_executable(ex03
+        example_03/main.cpp
+)
+target_link_libraries(ex03 glfw.3 ${VULKAN_LIBS} )
