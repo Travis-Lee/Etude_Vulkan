@@ -28,7 +28,7 @@ endif()
 set(CMAKE_CXX_STANDARD 23)
 set(AUTO_LOAD_VULKAN ON)
 
-include_directories(${PROJECT_NAME}  SYSTEM ThirdParty/glfw3/include)
+include_directories(${PROJECT_NAME}  SYSTEM 3rdparty/glfw3/include)
 
 
 
@@ -63,7 +63,7 @@ endif()
 message(STATUS "vulkan path:${VULKAN_PATH}")
 # 设置头文件
 include_directories(${PROJECT_NAME} ${VULKAN_INCLUDE})
-link_directories(${PROJECT_NAME} ThirdParty/glfw3/lib-universal;${VULKAN_PATH}/../Lib)
+link_directories(${PROJECT_NAME} 3rdparty/glfw3/lib-universal;${VULKAN_PATH}/../Lib)
 
 add_executable(${PROJECT_NAME}
         example/main.cpp
