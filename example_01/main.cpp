@@ -13,13 +13,13 @@ public:
     }
 private:
     void initVulkan() {
-      printf("init vulkan engine!\n");
+        printf("init vulkan engine!\n");
     }
     void mainLoop() {
-     printf("start work with vulkan!\n");
+        printf("start work with vulkan!\n");
     }
     void cleanup() {
-     printf("clean buffer for vullan\n");
+        printf("clean buffer for vullan\n");
     }
 };
 
